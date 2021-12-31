@@ -1,4 +1,4 @@
-export const API_URL = "https://catstronauts-server-klaudia.herokuapp.com/";
-// process.env.NODE_ENV === "production"
-//   ? "https://catstronauts-server-klaudia.herokuapp.com/"
-//   : "http://localhost:4000";
+export const API_URL =
+  process.env.REACT_APP_ENV === "production"
+    ? "https://catstronauts-server-klaudia.herokuapp.com/"
+    : "http://localhost:4000";
