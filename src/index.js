@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import GlobalStyles from "./styles";
 import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import { API_URL } from "./config";
 
 const client = new ApolloClient({
-  uri: "https://catstronauts-server-klaudia.herokuapp.com/",
+  uri: API_URL,
   cache: new InMemoryCache(),
 });
 
