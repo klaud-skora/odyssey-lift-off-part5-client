@@ -5,9 +5,7 @@ import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: (process.env.NODE_ENV = "production"
-    ? "https://catstronauts-server-klaudia.herokuapp.com/"
-    : "http://localhost:4000"),
+  uri: "https://catstronauts-server-klaudia.herokuapp.com/",
   cache: new InMemoryCache(),
 });
 
